@@ -11,12 +11,15 @@ import SettingsSuggestIcon from '@mui/icons-material/SettingsSuggest';
 import AccountBoxIcon from '@mui/icons-material/AccountBox';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import LogoutIcon from '@mui/icons-material/Logout';
+import { Link  } from "react-router-dom";   
 
 const Sidebar = ()=>{
         return(
             <div className="sidebar">
                 <div className="top">
+                    <Link to="/">
                     <span className="logo">Admin</span>
+                    </Link>
                 </div>
                 <hr/>
                 <div className="center">
@@ -24,9 +27,15 @@ const Sidebar = ()=>{
                         <p className="title">Main</p>
                         <li >< DashboardIcon className="icon"/><span>DashBoard</span></li>
                         <p className="title">List</p>
+                        <Link to="/users">
                         <li><GroupIcon className="icon"/><span>Users</span></li>
+                        </Link>
+                        <Link to="/product">
                         <li><AccountCircleIcon className="icon"/><span>Products</span></li>
+                        </Link>
+                        <Link to="/orders">
                         <li><ShoppingCartIcon className="icon"/><span>Orders</span></li>
+                        </Link>
                         <li><LocalShippingIcon className="icon"/><span>Delivery</span></li>
                         <p className="title">Useful</p>
                         <li><QueryStatsIcon className="icon"/><span>Stats</span></li>   

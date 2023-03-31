@@ -7,10 +7,11 @@ import List from "./pages/list/list";
 import Login from "./pages/login/login";
 import New from "./pages/new/new";
 import Single from "./pages/single/single";
-
+import  "./pages/styles/dark.scss"
+import Tables from "./component/table/table";
 function App() {
   return (
-    <div className="App">
+    <div className="app dark">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
@@ -20,7 +21,7 @@ function App() {
           <Route path="new" element={<New />} />
         </Route>
         <Route path="/product">
-          <Route index element={<List />}></Route>
+          <Route index element={<Tables />}></Route>
           <Route path=":productid" element={<Single />} />
           <Route path="new" element={<New />} />
         </Route>

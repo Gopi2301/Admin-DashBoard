@@ -1,9 +1,16 @@
+import Datatable from "../../component/datatable/datatable";
+import Navbar from "../../component/navbar/navbar";
+import Sidebar from "../../component/sidebar/sidebar";
 import "./list.scss"
 
 const List = ()=>{
     return(
         <div className="list">
-            <h1 className="title">List</h1>
+            <Sidebar />
+            <div className="listContainer">
+                <Navbar />
+               <Datatable /> 
+            </div>
         </div>
     )
 }
