@@ -1,11 +1,9 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
 import "./App.css";
 import { Routes, Route, Link } from "react-router-dom";
 import Home from "./pages/home/home";
 import List from "./pages/list/list";
 import Login from "./pages/login/login";
-import New from "./pages/new/new";
+import New from "./pages/new/New.jsx";
 import Single from "./pages/single/single";
 import  "./pages/styles/dark.scss"
 import Tables from "./component/table/table";
